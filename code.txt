@@ -1,0 +1,7 @@
+provide normal
+runtime r
+r.start()
+for(int i=0;i<1000;i++)
+outf("233")
+outf(r.finish())
+readint()
