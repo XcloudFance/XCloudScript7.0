@@ -48,15 +48,17 @@ inline void getcode()
 				cppcoding+="#include\"xcs.h\"\n"; 
 				cppcoding+="#include\"function.h\"\n"; 
 				cppcoding+="#include\"normal.h\"\n"; 
-				cppcoding+="#include\"compile.h\"\n"; 
+				cppcoding+="#include\"compile.h\"\n";
+				cppcoding+="#include\"recycle.h\"\n"; 
 				cppcoding+="using namespace std;\n";
 				cppcoding+="int main(void){\n";
 				cppcoding+="ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);\n";
 				continue;
 			}
 	       	cppcoding+=s;
-	       	
-	       	if(getfuncname(s)!="for")
+	       	string tick=getfuncname(s); 
+	       	cout<<tick<<endl; 
+	       	if(tick!="for"&&tick!="formem"&&tick!="fornum")
 	       	{
 	       		cppcoding+=";";
 	       	}

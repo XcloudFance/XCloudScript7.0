@@ -1,4 +1,7 @@
 #include "stringbuilder.h"
+#include<string> 
+#include<conio.h>
+#define rkey(); getch();
 string getfilepath()
 {
 	char ExePath[MAX_PATH];
@@ -29,6 +32,10 @@ inline void outf(double coding,string end="\n")
 	cout<<coding<<end;
 }
 inline void outf(int coding,string end="\n") 
+{
+	cout<<coding<<end;
+}
+inline void outf(string coding,string end="\n") 
 {
 	cout<<coding<<end;
 }

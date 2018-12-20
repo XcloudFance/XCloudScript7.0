@@ -3,11 +3,11 @@
 #include "normal.h"
 #include "function.h"
 #include "compile.h"
+#include "recycle.h" 
 using namespace std;
 int main()
 {
-	ios::sync_with_stdio(false);cin.tie(0);//cout.tie(0);
-	outf("233");
+	ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 	explain();
 	cppcoding+="}\n";
 	cout<<"ÕýÔÚ±àÒë¡­¡­"<<endl; 

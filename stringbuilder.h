@@ -20,6 +20,7 @@ class Stringbuilder{
         }
         return *this;
     }
+    
 	char& operator [](const int index)
 	{
 		return content[index];
