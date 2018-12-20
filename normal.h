@@ -5,9 +5,9 @@
 #define object_string Stringbuilder 
 struct BigInteger {
     typedef unsigned long long LL;
-    static const int BASE =100000;
-    static const int WIDTH = 90;
-    vector<short> s;
+    static const int BASE =1000000000;
+    static const int WIDTH = 8;
+    vector<int> s;
     BigInteger& clean(){while(!s.back()&&s.size()>1)s.pop_back(); return *this;}
     BigInteger(LL num = 0) {*this = num;}
     BigInteger(string s) {*this = s;}
