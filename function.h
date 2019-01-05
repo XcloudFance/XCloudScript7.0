@@ -1,4 +1,7 @@
+#include<windows.h>
 #include "stringbuilder.h"
+#define formem(i) for(int mem=0;mem<i;mem++) 
+#define fornum(i,j) for(int num=i,num<=j;num++)
 string getfilepath()
 {
 	char ExePath[MAX_PATH];
@@ -24,14 +27,26 @@ inline void outf(Stringbuilder coding,string end="\n")
 {
 	cout<<coding<<end;
 }
-inline void outf(double coding,string end="\n") 
-{
-	cout<<coding<<end;
-}
 inline void outf(int coding,string end="\n") 
 {
 	cout<<coding<<end;
 }
+
+inline void outf(double coding,string end="\n") 
+{
+	cout<<(double)coding<<end;
+}
+
+inline int sum(int a, ...){
+    int *temp = &a, sum=0;
+    ++temp;
+    for (int i = 0; i < a; ++i)
+        sum+=*temp++;
+    return sum;
+}
+
+
+
 class runtime{
 	clock_t begin;
 	clock_t end;

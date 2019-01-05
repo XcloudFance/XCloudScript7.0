@@ -1,7 +1,11 @@
+#include "stringbuilder.h"
 #include "file.h"
+#include "lualib.h"
+#include<iostream> 
 using namespace std;
 int main()
 {
-	io IO;
-	IO.WriteTexts("test.txt","test.txt");
-} 
+	luaint s;
+	s="233";
+	cout<<s;
+}

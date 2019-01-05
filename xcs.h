@@ -32,7 +32,7 @@ inline string subback(string s)
 } 
 inline void getcode()
 {
-	string file="code.txt";
+		string file="code.txt";
 	    ifstream infile; 
 	    infile.open(file.data());   //将文件流对象与文件连接起来 
 	    assert(infile.is_open());   //若失败,则输出错误消息,并终止程序运行 
@@ -41,22 +41,35 @@ inline void getcode()
 	    while(getline(infile,s))
 	    {
 	    	s=subback(subfront(s));
-	    	coding+=s;cout<<s<<endl;
-	    	if(s=="provide normal")
+	    	coding+=s;
+	    	string tmp[1000];
+	    	int tmp1=0;
+			for(char i : s)	
+				if(i!=' ')
+					tmp[tmp1%1000]+=i;
+				else 
+				if(tmp[tmp1]!="")
+				tmp1++;
+			cout<<tmp1<<endl;
+			if(tmp[0]=="provide")
 			{
-				cppcoding+="#include\"grammer.h\"\n";
-				cppcoding+="#include\"xcs.h\"\n"; 
-				cppcoding+="#include\"function.h\"\n"; 
-				cppcoding+="#include\"normal.h\"\n"; 
-				cppcoding+="#include\"compile.h\"\n"; 
-				cppcoding+="using namespace std;\n";
-				cppcoding+="int main(void){\n";
-				cppcoding+="ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);\n";
-				continue;
+					if(tmp[1]=="normal")
+					{
+						cppcoding+="#include\"grammer.h\"\n";
+						cppcoding+="#include\"xcs.h\"\n"; 
+						cppcoding+="#include\"function.h\"\n"; 
+						cppcoding+="#include\"normal.h\"\n"; 
+						cppcoding+="#include\"compile.h\"\n"; 
+						cppcoding+="using namespace std;\n";
+						cppcoding+="int main(void){\n";
+						cppcoding+="ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);\n";
+						continue;
+					}
 			}
+		
 	       	cppcoding+=s;
-	       	
-	       	if(getfuncname(s)!="for")
+	       	 
+	       	if(getfuncname(s)!="for" && getfuncname(s)!="formem" && getfuncname(s)!="fornum")
 	       	{
 	       		cppcoding+=";";
 	       	}

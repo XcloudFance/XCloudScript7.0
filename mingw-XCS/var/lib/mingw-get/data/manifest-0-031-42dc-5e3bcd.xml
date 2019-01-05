@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-031-42dc-5e3bcd">
+    <release tarname="gmp-6.1.2-1-mingw32-info.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-002-a7c6-d7dbb5" />
+    </references>
+    <manifest>
+        <file path="share/info/gmp.info" />
+        <file path="share/info/gmp.info-1" />
+        <file path="share/info/gmp.info-2" />
+    </manifest>
+</package>

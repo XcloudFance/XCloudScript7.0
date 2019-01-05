@@ -3,6 +3,7 @@
 #define object_int64 long long
 #define object_int128 BigInteger
 #define object_string Stringbuilder 
+#define int128 luainteger
 struct BigInteger {
     typedef unsigned long long LL;
     static const int BASE =1000000000;

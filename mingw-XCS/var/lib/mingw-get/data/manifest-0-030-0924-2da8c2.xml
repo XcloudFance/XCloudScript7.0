@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-030-0924-2da8c2">
+    <release tarname="gmp-6.1.2-1-mingw32-dev.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-002-a7c6-d7dbb5" />
+    </references>
+    <manifest>
+        <file path="include/gmp.h" />
+        <file path="include/gmpxx.h" />
+        <file path="lib/libgmp.a" />
+        <file path="lib/libgmp.dll.a" />
+        <file path="lib/libgmpxx.a" />
+        <file path="lib/libgmpxx.dll.a" />
+    </manifest>
+</package>

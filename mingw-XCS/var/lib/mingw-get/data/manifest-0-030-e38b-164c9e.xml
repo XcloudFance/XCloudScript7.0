@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-030-e38b-164c9e">
+    <release tarname="lua-5.2.0-1-mingw32-man.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-002-a7c6-d7dbb5" />
+    </references>
+    <manifest>
+        <dir path="share/man" />
+        <dir path="share/man/man1" />
+        <file path="share/man/man1/lua.1" />
+        <file path="share/man/man1/luac.1" />
+    </manifest>
+</package>

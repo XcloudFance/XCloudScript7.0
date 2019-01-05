@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-030-7904-ec679c">
+    <release tarname="lua-5.2.0-1-mingw32-dev.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-002-a7c6-d7dbb5" />
+    </references>
+    <manifest>
+        <dir path="include" />
+        <file path="include/lualib.h" />
+        <file path="include/lua.h" />
+        <file path="include/lauxlib.h" />
+        <file path="include/luaconf.h" />
+        <file path="include/lua.hpp" />
+        <dir path="lib" />
+        <dir path="lib/lua" />
+        <dir path="lib/lua/5.2" />
+        <file path="lib/liblua.dll.a" />
+        <file path="lib/liblua.a" />
+        <dir path="share/lua" />
+        <dir path="share/lua/5.2" />
+    </manifest>
+</package>
