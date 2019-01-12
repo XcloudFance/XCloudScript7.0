@@ -50,7 +50,6 @@ inline void getcode()
 				else 
 				if(tmp[tmp1]!="")
 				tmp1++;
-			cout<<tmp1<<endl;
 			if(tmp[0]=="provide")
 			{
 					if(tmp[1]=="normal")
@@ -60,6 +59,7 @@ inline void getcode()
 						cppcoding+="#include\"function.h\"\n"; 
 						cppcoding+="#include\"normal.h\"\n"; 
 						cppcoding+="#include\"compile.h\"\n"; 
+						cppcoding+="#include\"file.h\"\n";
 						cppcoding+="using namespace std;\n";
 						cppcoding+="int main(void){\n";
 						cppcoding+="ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);\n";

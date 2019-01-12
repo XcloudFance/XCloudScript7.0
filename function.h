@@ -1,7 +1,7 @@
 #include<windows.h>
 #include "stringbuilder.h"
-#define formem(i) for(int mem=0;mem<i;mem++) 
-#define fornum(i,j) for(int num=i,num<=j;num++)
+#define formem(i) for(long long int mem=0;mem<i;mem++) 
+#define fornum(i,j) for(long long int num=i,num<=j;num++)
 string getfilepath()
 {
 	char ExePath[MAX_PATH];
@@ -72,6 +72,19 @@ string str(int s)
 		s/=10;
 	}
 	return res;
+}
+string str(long long num)
+{
+	string tmp;
+    while(num)
+	{
+		tmp+=num%10+48;
+		num/=10;
+	}
+	string re;
+	for(int i=tmp.length()-1;i>=0;i--)
+		re+=tmp[i];
+	return re;
 }
 string str(double num)
 {

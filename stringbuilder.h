@@ -43,20 +43,17 @@ class Stringbuilder{
         return *this;
     }
  	
-    Stringbuilder& operator +(const Stringbuilder& str)//¸³ÖµÔËËã·û
+    Stringbuilder operator +(const Stringbuilder& str)//¸³ÖµÔËËã·û
     {
-        if (this != &str)
-        {
-            this->content+=str.content;
-        }
-        return *this;
+    	Stringbuilder tmp;
+        tmp=this->content+str.content;
+        return tmp;
     }
-    Stringbuilder& operator +(const char str[])//¸³ÖµÔËËã·û
+    Stringbuilder operator +(const char str[])//¸³ÖµÔËËã·û
     {
-        
-            this->content+=str;
-        
-        return *this;
+    	Stringbuilder tmp;
+        tmp=this->content+str;
+        return tmp;
     }
     int find(Stringbuilder str)
     {
